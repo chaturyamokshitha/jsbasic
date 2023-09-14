@@ -8,13 +8,13 @@
 
 //every callback method
 const names=['mokshitha','deekshitha','akshitha','harshitha','haritha'];
-names.every(name=>{
+console.log(names.every(name=>{
 return names.length===9;
-});
+}));
 //some callback method
-names.some(nam=>{
-    return names.length>9;
-});
+console.log(names.some(nam=>{
+    return names.length>=9;
+}));
 //filter callback method
 const nums=[1,2,4,5,6,7,8,9,10];
 nums.filter(num=>{
@@ -29,10 +29,10 @@ let colleges=['mlritm','mlrit','cmr','iare','vnr'];
 colleges.find(college=>{
     return college.includes('m');
 })
-let palindrome=[121,333,414,727];
-palindrome.find(pali=>{
-    return pali.includes('2');
-})
+let palindrome = ['121', '333', '414', '727'];
+console.log(palindrome.find((pali) => {
+  return pali.includes("2");
+}));
 //map call back method
 let caps=['abcd','efgh','hijk'];
 const smalls=console.log(caps.map(se));
@@ -44,9 +44,10 @@ let sm=[1,2,3,4,5];
 let lm=console.log(sm.map(large=>{
     return large>5;
 }))
-//for each method
-const sq=[1,2,3,4,5,6,7];
-console.log(sq.forEach(function(numb){
-console.log(numb*numb);
-}));
+//forEach method
+const nums=[9,8,7,6,5,4,3,2,1];
+nums.forEach(function(n){
+    console.log(n*n);
+});
+
 
