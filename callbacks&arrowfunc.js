@@ -35,6 +35,18 @@ palindrome.find(pali=>{
 })
 //map call back method
 let caps=['abcd','efgh','hijk'];
-const smalls=caps.map(s=>{
-  return s.toUpperCase();
-})
+const smalls=console.log(caps.map(se));
+function se(se){
+
+  return se.toUpperCase();
+}
+let sm=[1,2,3,4,5];
+let lm=console.log(sm.map(large=>{
+    return large>5;
+}))
+//for each method
+const sq=[1,2,3,4,5,6,7];
+console.log(sq.forEach(function(numb){
+console.log(numb*numb);
+}));
+
